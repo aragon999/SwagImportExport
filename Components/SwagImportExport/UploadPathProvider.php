@@ -53,7 +53,7 @@ class UploadPathProvider
      */
     public function getFileExtension($path)
     {
-        return pathinfo($path, PATHINFO_EXTENSION);
+        return strtolower(pathinfo($path, PATHINFO_EXTENSION));
     }
 
     /**
